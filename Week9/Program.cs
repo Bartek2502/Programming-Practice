@@ -10,6 +10,25 @@ namespace Week9
     {
         static void Main(string[] args)
         {
+            Song song1 = new Song("BEAUTIFUL PEOPLE", "ED SHEERAN", 3.15, Genre.Pop);
+            Song song2 = new Song("Dance Monkey", "TONES & 1", 4.20, Genre.Dance);
+            Song song3 = new Song("CIRCLES", "POST MALONE", 3.25, Genre.Pop);
+            Song song4 = new Song("RIDE IT", "REGARD", 3.37, Genre.Dance );
+            Song song5 = new Song("SOUTH OF THE BORDER", "ED SHEERAN", 4.26, Genre.Pop);
+
+
+            List<Song> playlist = new List<Song>;
+
+            playlist.Add(song1);
+            playlist.Add(song2);
+            playlist.Add(song3);
+            playlist.Add(song4);
+            playlist.Add(song5);
+
+            foreach (Song song in playlist)
+            {
+                Console.WriteLine(song);
+            }
         }
     }
 }
