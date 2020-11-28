@@ -17,7 +17,7 @@ namespace Week9
             Song song5 = new Song("SOUTH OF THE BORDER", "ED SHEERAN", 4.26, Genre.Pop);
 
 
-            List<Song> playlist = new List<Song>;
+            List<Song> playlist = new List<Song>();
 
             playlist.Add(song1);
             playlist.Add(song2);
@@ -25,9 +25,16 @@ namespace Week9
             playlist.Add(song4);
             playlist.Add(song5);
 
+            Display(playlist);
+        }
+
+        private static void Display (List<Song> playlist)
+        {
+            Console.WriteLine("{0, -20}{1, -25}{2, -10}{3, -10}", "Artist", "Song", "Duration", "Genre");
+
             foreach (Song song in playlist)
             {
-                Console.WriteLine(song);
+                Console.WriteLine($"{song.Artist, -20}{song.Title, -25}{song.Duration, -10}{song.MusicGenre, -10}");
             }
         }
     }
